@@ -17,3 +17,6 @@ class ProjectViewSet(viewsets.ModelViewSet):  #clase que hereda de django rest f
 
 
   serializer_class = ProjectSerializer  #mis datos legibles por el serializer, como los voy a convertir
+
+
+

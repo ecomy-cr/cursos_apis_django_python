@@ -50,4 +50,14 @@ ahora la ruta por donde el cliente va a consultar   http://localhost:8000/miapiu
 #creo el archivo .py en mi app urls
 
 
+CURSO CON FAZTWEB PARA ENDPOINTS
+https://www.youtube.com/watch?v=GE0Q8YNKNgs&t=936s
+video 15:30
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ecomy-cr/cursos_apis_django_python.git
+git push -u origin main
 
+Se sube proyecto a github, ya github esta configurado en mi PC-UbuntoLinux
