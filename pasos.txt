@@ -1,0 +1,53 @@
+FAZT WEB 
+Django Rest FrameWork 2022 Septiembre
+Curso bàsico para API con python Django
+
+Crear entorno virtual del curso
+Instalar librerias para el proyecto 
+
+pip-python
+
+django
+djangorestframework
+
+
+
+iniciar proyecto con django 
+
+django-admin startproject nameproject .
+
+
+python manage.py runserver
+
+iniciar app
+
+python manage.py startapp projects
+
+ir a settings y agregar el app en install app o en sus terceras app y luego en install_apps
+luego añadir rest_framework de django 
+
+crear un modelo o tabla, db para app : tablas 
+
+python manage.py makemigrations o migrate 
+para ejecutar cambios en la base de datos configurada
+
+
+
+
+
+#serializer para los endpoints, convertir los datos de python en formato   Json   para ser consultados de parte del cliente  o 
+nos permite quien puede acceder a los datos de la base de datos
+
+
+#Viewset  quien puede consultar los serializer - que peticiones se pueden hacer - modificar o eliminar
+
+crear el archivo para los Viewset, cualquier nombre 
+
+
+#ya esta la primer parte del api creada
+
+ahora la ruta por donde el cliente va a consultar   http://localhost:8000/miapiurl
+#creo el archivo .py en mi app urls
+
+
+
