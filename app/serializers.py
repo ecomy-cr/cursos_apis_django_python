@@ -11,4 +11,5 @@ class ProjectSerializer(serializers.ModelSerializer):  #clase cualquier nombre, 
         model = Project  #el modelo a consultar en db
         fields = '__all__' #los campos que son consultados    = ('id', 'title'...)
 
-        read_only_fields = ('created_at',) #que campo son de solo lectura, no se puede editar.
+        read_only_fields = ('created_at',) #que campo son de solo lectura, no se puede editar, tiene que llevar una coma
+        
