@@ -73,3 +73,37 @@ se hace el despliegue en
 render.com o heroku.com gratiutamente
 
 www.render.com
+
+
+
+
+
+
+luego de crear como servir los archivos
+cuando despleguemos vamos a querer generar migration e instalar los modulos 
+para no hacerlo comando a comando 
+crear build.sh
+
+bashscrip
+
+requirements.txt
+
+
+
+
+chmod  #esto no lo tengo 
+
+permisos de ejecutable
+
+slo UbuntoLinux
+
+si hay git instalado 
+permisos a desde consola
+
+chmod a+x build.sh
+
+
+ls para verificar 
+
+
+
