@@ -110,3 +110,13 @@ ls para verificar
 
 
 django: django es para crear aplicacion, no servir contenido necesitamos,  gunicorn para servir contenido statico
+
+
+
+en render
+creamos una postgresql
+y creamos una web service
+
+los archivos actualizados en github lo conectamos con render y le damos conectar
+
+variables de entorno
