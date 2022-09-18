@@ -107,3 +107,6 @@ ls para verificar
 
 
 
+
+
+django: django es para crear aplicacion, no servir contenido necesitamos,  gunicorn para servir contenido statico
