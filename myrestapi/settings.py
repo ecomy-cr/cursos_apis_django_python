@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -22,13 +22,34 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-z_k!_gibkf^6tz+3r5(yk!7_jr30)+d9@gbl2@nrxwp30kk7b&'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# SECURITY WARNING: don't run with debug turned on in production! en false para despliegue
+
+
+DEBUG = 'RENDER' not in os.environ
+
+
+
+
+ALLOWED_HOSTS = []
+
+#Añadir las url que nosotros queramos
+
+#esta variable es la url que nos da render, cuando desplegamos en render.com,  render nos da una url
+#si el nos devuelve una url nosotros con django la colocamos en allowed host del proyecto de jjango    ejemplo miproyectoonrender.com etc
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+
+
+
+
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -123,6 +144,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
 
