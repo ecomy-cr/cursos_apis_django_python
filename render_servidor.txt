@@ -1,0 +1,6 @@
+Esta es la direccion del deploy en render server
+
+
+https://curso-apisimpe-django-python.onrender.com
+
+con la cuenta personal de proyectos
