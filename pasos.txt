@@ -120,3 +120,8 @@ y creamos una web service
 los archivos actualizados en github lo conectamos con render y le damos conectar
 
 variables de entorno
+
+
+sale un error de build.sh  y de css por bootstrap 
+ para solucionarlo  en requirements.txt 
+ cambien django version por 4.0
